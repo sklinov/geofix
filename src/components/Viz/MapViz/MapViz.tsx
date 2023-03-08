@@ -58,6 +58,8 @@ export const MapViz = ({ geoJsonData }: MapVizProps) => {
       style={{ width: "calc(50vw - 20px)", height: "calc(95vh - 20px)" }}
       center={center}
       zoom={13}
+      maxZoom={17}
+      
     >
       <TileLayer url="https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png" />
       <GeoJSON data={geoJsonData} />
